@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>REGIONS — Slovensko v pohybe</title>
+  <meta name="description" content="Regions — moderný slovenský spravodajský portál, regionálne a celoslovenské správy." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#">
+      <img src="A_logo_for_a_Slovak_news_and_information_website_n.png" alt="Regions logo" class="logo">
+      <div class="brand-text">
+        <h1>REGIONS</h1>
+        <p class="slogan">Slovensko v pohybe</p>
+      </div>
+    </a>
+    <nav class="main-nav" aria-label="Hlavné menu">
+      <button id="nav-toggle" aria-expanded="false">☰</button>
+      <ul id="nav-list">
+        <li><a href="#">Domov</a></li>
+        <li><a href="#">Slovensko</a></li>
+        <li><a href="#">Svet</a></li>
+        <li><a href="#">Ekonomika</a></li>
+        <li><a href="#">Technológie</a></li>
+        <li><a href="#">Šport</a></li>
+        <li><a href="#">Kultúra</a></li>
+        <li><a href="#">Regióny</a></li>
+        <li><a href="#">Názory</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <article class="hero-main card">
+        <img src="https://picsum.photos/1200/600?random=1" alt="Hlavná správa">
+        <div class="card-content">
+          <span class="kicker">TOP</span>
+          <h2>Hlavná správa dňa: Dôležitá udalosť v regione</h2>
+          <p>Krátky úvodný text k hlavnej správe. Tu je priestor pre pútavý sumár, ktorý upúta čitateľa.</p>
+          <a class="read-more" href="#">Čítať viac →</a>
+        </div>
+      </article>
+
+      <aside class="hero-side">
+        <div class="side-card card">
+          <h3>Najčítanejšie</h3>
+          <ul class="top-list">
+            <li><a href="#">Ako sa mení mesto X — reportáž</a></li>
+            <li><a href="#">Ekonomické novinky: Ceny a dopady</a></li>
+            <li><a href="#">Rozhovor: Starosta o plánoch</a></li>
+          </ul>
+        </div>
+
+        <div class="side-card card newsletter">
+          <h3>Newsletter</h3>
+          <p>Prihlás sa na odber správ z tvojho regiónu.</p>
+          <form id="newsletter-form" onsubmit="return false;">
+            <input type="email" placeholder="E‑mail" required>
+            <select aria-label="Vyber regiónu">
+              <option>Celé Slovensko</option>
+              <option>Bratislavský</option>
+              <option>Trnavský</option>
+              <option>Trenčiansky</option>
+              <option>Nitriansky</option>
+              <option>Žilinský</option>
+              <option>Banskobystrický</option>
+              <option>Prešovský</option>
+              <option>Košický</option>
+            </select>
+            <button class="btn">Prihlásiť</button>
+          </form>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="content container">
+    <div class="grid">
+      <div class="main-col">
+        <h3 class="section-title">Posledné správy</h3>
+        <div class="cards">
+          <article class="card">
+            <img src="https://picsum.photos/800/500?random=2" alt="sprava">
+            <div class="card-content">
+              <span class="kicker">Slovensko</span>
+              <h4>Regionálna téma: Nový projekt pre komunitu</h4>
+              <p>Stručný opis článku s uvedením konkrétnych krokov a dopadu na obyvateľstvo.</p>
+              <a class="read-more" href="#">Čítať →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://picsum.photos/800/500?random=3" alt="sprava2">
+            <div class="card-content">
+              <span class="kicker">Technológie</span>
+              <h4>Startup zo Slovenska získal investíciu</h4>
+              <p>Krátky popis úspechu, kto investoval a aké sú plány.</p>
+              <a class="read-more" href="#">Čítať →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="https://picsum.photos/800/500?random=4" alt="sprava3">
+            <div class="card-content">
+              <span class="kicker">Šport</span>
+              <h4>Lokálny klub postúpil do vyššej ligy</h4>
+              <p>Reportáž zo zápasu, najdôležitejšie momenty a vyjadrenia trénera.</p>
+              <a class="read-more" href="#">Čítať →</a>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="section-title">Regióny</h3>
+        <div class="regions-map card">
+          <!-- Simple SVG placeholder for map -->
+          <svg viewBox="0 0 100 60" class="map-svg" role="img" aria-label="Mapa Slovenska">
+            <rect x="0" y="0" width="100" height="60" fill="#f4f6f8"/>
+            <text x="50" y="32" font-size="6" text-anchor="middle" fill="#0C1F3F">Mapa regiónov (placeholder)</text>
+          </svg>
+          <p>Klikni na región pre lokálne správy. (Interaktivitu môžeš doplniť podľa potreby.)</p>
+        </div>
+
+      </div>
+
+      <aside class="side-col">
+        <div class="card sticky">
+          <h4>Rýchle správy</h4>
+          <ul class="short-news">
+            <li>12:30 — Krátka správa z Bratislavy</li>
+            <li>11:05 — Doprava: obmedzenie na diaľnici</li>
+            <li>09:40 — Kultúra: nový festival</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4>Najnovšie videá</h4>
+          <div class="video-thumb">
+            <img src="https://picsum.photos/400/230?random=5" alt="video">
+            <p>Reportáž: Život v regióne</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4>Podporte nás</h4>
+          <p>Je možné pridať predplatné alebo darovanie. (Placeholder)</p>
+          <button class="btn">Viac info</button>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>O REGIONS</h4>
+      <p>REGIONS je nezávislý spravodajský portál zameraný na spojenie regiónov Slovenska.</p>
+    </div>
+    <div>
+      <h4>Kontakt</h4>
+      <p>redakcia@regions.sk<br> +421 94X XXX XXX</p>
+    </div>
+    <div>
+      <h4>Sledujte nás</h4>
+      <p>Facebook · Instagram · X</p>
+    </div>
+  </div>
+  <div class="copyright">© 2025 REGIONS. Všetky práva vyhradené.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
